@@ -47,18 +47,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ];        
 
-        offices.forEach(city => {
+        const infoWindow = new google.maps.InfoWindow();
+
+        offices.forEach(office => {
             const marker = new google.maps.Marker({
-                position: city.position,
+                position: office.position,
                 map: map,
-                title: city.name,
+                title: office.name,
             });
 
             marker.addListener('click', () => {
-                window.location.href = city.url;
+                // Set the content of the InfoWindow
+                infoWindow.setContent(`
+                    <div style="text-align: center;">
+                        <h2>${office.name}</h2>
+                        <button onclick="closeInfoWindow()">Close</button>
+                    </div>
+                `);
+
+                // Open the InfoWindow at the marker
+                infoWindow.open(map, marker);
             });
         });
+
+        // Global function to close the InfoWindow
+        window.closeInfoWindow = function() {
+            infoWindow.close();
+        };
     }
+    
 
     // Initialize the map when the window loads
     window.initMap = initMap;
