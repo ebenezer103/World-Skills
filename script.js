@@ -8,15 +8,46 @@ document.addEventListener('DOMContentLoaded', () => {
             center: ukCenter,
         });
 
-        // Add markers for cities
-        const cities = [
-            { name: 'London', position: { lat: 51.5074, lng: -0.1278 }, url: 'london.html' },
-            { name: 'Manchester', position: { lat: 53.4808, lng: -2.2426 }, url: 'manchester.html' },
-            { name: 'Edinburgh', position: { lat: 55.9533, lng: -3.1883 }, url: 'edinburgh.html' },
-            { name: 'Birmingham', position: { lat: 52.4862, lng: -1.8904 }, url: 'birmingham.html' },
-        ];
+        // Add markers for offices
+        const offices = [
+            { 
+                name: 'BT Office - Martlesham Heath', 
+                position: { lat: 52.0597, lng: 1.2581 }, 
+                url: 'bt-martlesham.html' 
+            },
+            { 
+                name: 'BT Office - Sheffield Endeavour', 
+                position: { lat: 53.3996, lng: -1.4385 }, 
+                url: 'bt-sheffield.html' 
+            },
+            { 
+                name: 'BT Office - One Braham, London', 
+                position: { lat: 51.5156, lng: -0.0723 }, 
+                url: 'bt-london.html' 
+            },
+            { 
+                name: 'Rokos Capital Management', 
+                position: { lat: 51.5128, lng: -0.1409 }, 
+                url: 'rokos-london.html' 
+            },
+            { 
+                name: 'JP Morgan - Victoria Embankment, London', 
+                position: { lat: 51.5108, lng: -0.1044 }, 
+                url: 'jp-london-victoria.html' 
+            },
+            { 
+                name: 'JP Morgan - Bank Street, London', 
+                position: { lat: 51.5056, lng: -0.0176 }, 
+                url: 'jp-london-bank.html' 
+            },
+            { 
+                name: 'JP Morgan - Argyle St, Glasgow', 
+                position: { lat: 55.8574, lng: -4.2558 }, 
+                url: 'jp-glasgow.html' 
+            }
+        ];        
 
-        cities.forEach(city => {
+        offices.forEach(city => {
             const marker = new google.maps.Marker({
                 position: city.position,
                 map: map,
