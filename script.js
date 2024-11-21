@@ -11,45 +11,45 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add markers for offices
         const offices = [
             { 
-                name: 'BT Office - Martlesham Heath', 
+                name: 'BT Office - Martlesham Heath',
+                text: 'This is one of our prestigious offices located at a prime location.',
                 position: { lat: 52.0597, lng: 1.2581 }, 
-                url: 'bt-martlesham.html',
                 icon: 'img/bt-logo.png'
             },
             { 
-                name: 'BT Office - Sheffield Endeavour', 
-                position: { lat: 53.3996, lng: -1.4385 }, 
-                url: 'bt-sheffield.html',
+                name: 'BT Office - Sheffield Endeavour',
+                text: 'This is one of our prestigious offices located at a prime location.',
+                position: { lat: 53.3996, lng: -1.4385 },
                 icon: 'img/bt-logo.png'
             },
             { 
-                name: 'BT Office - One Braham, London', 
+                name: 'BT Office - One Braham, London',
+                text: 'This is one of our prestigious offices located at a prime location.',
                 position: { lat: 51.5156, lng: -0.0723 }, 
-                url: 'bt-london.html',
                 icon: 'img/bt-logo.png'
             },
             { 
-                name: 'Rokos Capital Management', 
+                name: 'Rokos Capital Management',
+                text: 'This is one of our prestigious offices located at a prime location.',
                 position: { lat: 51.5128, lng: -0.1409 }, 
-                url: 'rokos-london.html',
                 icon: 'img/rcm-logo.jpeg'
             },
             { 
-                name: 'JP Morgan - Victoria Embankment, London', 
+                name: 'JP Morgan - Victoria Embankment, London',
+                text: 'This is one of our prestigious offices located at a prime location.',
                 position: { lat: 51.5108, lng: -0.1044 }, 
-                url: 'jp-london-victoria.html',
                 icon: 'img/jpm-logo.jpg'
             },
             { 
-                name: 'JP Morgan - Bank Street, London', 
+                name: 'JP Morgan - Bank Street, London',
+                text: 'This is one of our prestigious offices located at a prime location.',
                 position: { lat: 51.5056, lng: -0.0176 }, 
-                url: 'jp-london-bank.html',
                 icon: 'img/jpm-logo.jpg'
             },
             { 
-                name: 'JP Morgan - Argyle St, Glasgow', 
+                name: 'JP Morgan - Argyle St, Glasgow',
+                text: 'This is one of our prestigious offices located at a prime location.',
                 position: { lat: 55.8574, lng: -4.2558 }, 
-                url: 'jp-glasgow.html',
                 icon: 'img/jpm-logo.jpg'
             }
         ];        
@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
             marker.addListener('click', () => {
                 // Set the content of the InfoWindow
                 infoWindow.setContent(`
-                <div style="text-align: center; font-family: Arial, sans-serif; padding: 10px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
-                    <h2 style="margin: 0; color: #333;">${office.name}</h2>
-                    <p style="margin: 10px 0; color: #666;">This is one of our prestigious offices located at a prime location.</p>
-                    <button onclick="closeInfoWindow()" style="background-color: #007BFF; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Close</button>
+                <div class="info-window">
+                    <h2>${office.name}</h2>
+                    <p>${office.text}</p>
+                    <button onclick="closeInfoWindow()">Close</button>
                 </div>
             `);
 
