@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const quizResult = document.getElementById('quizResult');
             quizResult.style.display = 'none';
         });
-        
+
         document.body.appendChild(overlayBox);
 
         // Hide overlay initially
