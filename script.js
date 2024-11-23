@@ -55,6 +55,52 @@ document.addEventListener('DOMContentLoaded', () => {
         ];        
 
         const infoWindow = new google.maps.InfoWindow();
+        let visitedCount = 0;
+        const visitedMarkers = new Set();
+
+        // Counter container
+        const counterContainer = document.createElement('div');
+        counterContainer.id = 'counterContainer';
+
+        // Counter element
+        const counterElement = document.createElement('div');
+        counterElement.id = 'counter';
+        counterElement.textContent = `Locations clicked: 0 / ${offices.length}`;
+        counterContainer.appendChild(counterElement);
+
+        // Reopen Overlay button
+        const reopenOverlayButton = document.createElement('button');
+        reopenOverlayButton.id = 'reopenOverlay';
+        reopenOverlayButton.textContent = 'Reopen Overlay';
+        reopenOverlayButton.style.display = 'none'; // Initially hidden
+        reopenOverlayButton.onclick = () => {
+            overlayBox.style.display = 'block';
+        };
+        counterContainer.appendChild(reopenOverlayButton);
+
+        document.body.appendChild(counterContainer);
+
+        // Overlay div box
+        const overlayBox = document.createElement('div');
+        overlayBox.id = 'overlayBox';
+        overlayBox.innerHTML = `
+            <div id="overlayContent">
+                <span id="closeOverlay">&times;</span>
+                <h2>Congratulations!</h2>
+                <p>You have visited all locations.</p>
+            </div>
+        `;
+        document.body.appendChild(overlayBox);
+
+        // Hide overlay initially
+        overlayBox.style.display = 'none';
+
+        // Add event listener to close the overlay
+        const closeOverlayButton = document.getElementById('closeOverlay');
+        closeOverlayButton.onclick = () => {
+            overlayBox.style.display = 'none';
+            reopenOverlayButton.style.display = 'block'; // Show the "Reopen Overlay" button
+        };
 
         offices.forEach(office => {
             const marker = new google.maps.Marker({
@@ -68,6 +114,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             marker.addListener('click', () => {
+                if (!visitedMarkers.has(office.name)) {
+                    visitedMarkers.add(office.name);
+                    visitedCount++;
+                    counterElement.textContent = `Locations clicked: ${visitedCount} / ${offices.length}`;
+
+                    // Show overlay if all locations are clicked
+                    if (visitedCount === offices.length) {
+                        overlayBox.style.display = 'block';
+                        reopenOverlayButton.style.display = 'none'; // Hide "Reopen Overlay" button
+                    }
+                }
+
                 // Set the content of the InfoWindow
                 infoWindow.setContent(`
                 <div class="info-window">
@@ -75,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>${office.text}</p>
                     <button onclick="closeInfoWindow()">Close</button>
                 </div>
-            `);
+                `);
 
                 // Open the InfoWindow at the marker
                 infoWindow.open(map, marker);
@@ -87,7 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
             infoWindow.close();
         };
     }
-    
 
     // Initialize the map when the window loads
     window.initMap = initMap;
