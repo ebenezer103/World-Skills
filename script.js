@@ -89,10 +89,97 @@ document.addEventListener('DOMContentLoaded', () => {
         overlayBox.innerHTML = `
             <div id="overlayContent">
                 <span id="closeOverlay">&times;</span>
-                <h2>Congratulations!</h2>
-                <p>You have visited all locations.</p>
+                <h2>Quiz: Test Your Knowledge!</h2>
+                <form id="quizForm">
+                    <div class="question">
+                        <p>1. What is the capital of the United Kingdom?</p>
+                        <label><input type="radio" name="q1" value="a"> Manchester</label><br>
+                        <label><input type="radio" name="q1" value="b"> Birmingham</label><br>
+                        <label><input type="radio" name="q1" value="c"> London</label><br>
+                        <label><input type="radio" name="q1" value="d"> Liverpool</label>
+                    </div>
+                    <div class="question">
+                        <p>2. Which company has an office at Martlesham Heath?</p>
+                        <label><input type="radio" name="q2" value="a"> Google</label><br>
+                        <label><input type="radio" name="q2" value="b"> BT</label><br>
+                        <label><input type="radio" name="q2" value="c"> JP Morgan</label><br>
+                        <label><input type="radio" name="q2" value="d"> Rokos Capital</label>
+                    </div>
+                    <div class="question">
+                        <p>3. What does "BT" stand for?</p>
+                        <label><input type="radio" name="q3" value="a"> British Telecom</label><br>
+                        <label><input type="radio" name="q3" value="b"> British Transport</label><br>
+                        <label><input type="radio" name="q3" value="c"> Best Telecom</label><br>
+                        <label><input type="radio" name="q3" value="d"> Binary Tech</label>
+                    </div>
+                    <div class="question">
+                        <p>4. Where is JP Morgan's Glasgow office located?</p>
+                        <label><input type="radio" name="q4" value="a"> Argyle St</label><br>
+                        <label><input type="radio" name="q4" value="b"> George St</label><br>
+                        <label><input type="radio" name="q4" value="c"> Sauchiehall St</label><br>
+                        <label><input type="radio" name="q4" value="d"> Buchanan St</label>
+                    </div>
+                    <div class="question">
+                        <p>5. Which London office is located at One Braham?</p>
+                        <label><input type="radio" name="q5" value="a"> JP Morgan</label><br>
+                        <label><input type="radio" name="q5" value="b"> BT</label><br>
+                        <label><input type="radio" name="q5" value="c"> Rokos Capital</label><br>
+                        <label><input type="radio" name="q5" value="d"> Google</label>
+                    </div>
+                    <button type="button" id="submitQuiz">Submit</button>
+                </form>
+                <div id="quizResult" style="display: none;">
+                    <p id="resultMessage"></p>
+                    <button id="retryQuiz">Retry Quiz</button>
+                </div>
             </div>
         `;
+
+        // Add event listeners for quiz functionality
+        document.body.appendChild(overlayBox);
+
+        document.getElementById('submitQuiz').addEventListener('click', () => {
+            const answers = {
+                q1: 'c',
+                q2: 'b',
+                q3: 'a',
+                q4: 'a',
+                q5: 'b'
+            };
+
+            let score = 0;
+            const form = document.getElementById('quizForm');
+            const formData = new FormData(form);
+
+            for (const [question, correctAnswer] of Object.entries(answers)) {
+                if (formData.get(question) === correctAnswer) {
+                    score++;
+                }
+            }
+
+            const passMark = 3; // 60% of 5 questions
+            const resultMessage = document.getElementById('resultMessage');
+            const quizResult = document.getElementById('quizResult');
+
+            if (score >= passMark) {
+                resultMessage.textContent = `Congratulations! You passed with a score of ${score}/5.`;
+            } else {
+                resultMessage.textContent = `Sorry, you failed with a score of ${score}/5. Please try again.`;
+            }
+
+            form.style.display = 'none';
+            quizResult.style.display = 'block';
+        });
+
+        document.getElementById('retryQuiz').addEventListener('click', () => {
+            const form = document.getElementById('quizForm');
+            form.reset();
+            form.style.display = 'block';
+
+            const quizResult = document.getElementById('quizResult');
+            quizResult.style.display = 'none';
+        });
+        
         document.body.appendChild(overlayBox);
 
         // Hide overlay initially

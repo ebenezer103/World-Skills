@@ -111,3 +111,21 @@ html, body {
     cursor: pointer;
     color: black;
 }
+
+.question {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
