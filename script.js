@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const map = new google.maps.Map(document.getElementById('map'), {
             zoom: 6,
             center: ukCenter,
+            zoomControl: false,
+            streetViewControl: false,
+            mapTypeControl: false
         });
 
         // Add markers for offices
