@@ -1,4 +1,12 @@
 /* styles.css */
+
+html, body {
+    height: 100%; /* Occupy full viewport height */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
 .info-window {
     text-align: center;
     font-family: Arial, sans-serif;
