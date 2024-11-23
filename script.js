@@ -30,19 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             { 
                 name: 'Rokos Capital Management',
-                text: 'This is one of our prestigious offices located at a prime location.',
+                text: 'This office focuses on minimizing energy usage by using energy-efficient equipment and practices. It operates as a zero waste to landfill site, ensuring all waste is recycled in the UK office.<br><br>The team prioritizes sustainability by using recycled paper and partnering with PrintReleaf to offset paper usage. Additionally, they work with ClimeCo to offset carbon emissions through various initiatives, including reforestation projects.',
                 position: { lat: 51.5128, lng: -0.1409 }, 
                 icon: 'img/rcm-logo.jpeg'
             },
             { 
-                name: 'JP Morgan - Victoria Embankment, London',
-                text: 'This is one of our prestigious offices located at a prime location.',
-                position: { lat: 51.5108, lng: -0.1044 }, 
+                name: 'JP Morgan - Bournemouth',
+                text: 'This office fully relies on solar panels installed across the roof to meet its energy needs.<br><br>By shifting entirely to renewable energy, it reduces dependency on non-renewable resources and promotes responsible energy production.',
+                position: { lat: 50.7205, lng: -1.8795 }, 
                 icon: 'img/jpm-logo.jpg'
             },
             { 
                 name: 'JP Morgan - Bank Street, London',
-                text: 'This is one of our prestigious offices located at a prime location.',
+                text: 'This office implements energy-saving algorithms for resources & hardware around the office.<br><br>These systems reduce unnecessary energy consumption in daily operations, aligning with the goal of efficient resource use.',
                 position: { lat: 51.5056, lng: -0.0176 }, 
                 icon: 'img/jpm-logo.jpg'
             },
