@@ -104,6 +104,22 @@ html, body {
     transform: translate(-50%, -50%);
     max-height: 90vh;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+}
+
+/* For Webkit browsers like Chrome and Safari */
+#overlayContent::-webkit-scrollbar {
+    width: 8px;
+}
+
+#overlayContent::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+#overlayContent::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 4px;
 }
 
 #overlayContent h2 {
