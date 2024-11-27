@@ -10,7 +10,7 @@ html, body {
 .info-window {
     text-align: center;
     font-family: Arial, sans-serif;
-    padding: 10px;
+    padding-bottom: 15px;
     border-radius: 8px;
 }
 
@@ -53,6 +53,27 @@ html, body {
     text-align: center;     /* Center text */
 }
 
+#quizBtn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    text-align: center;
+
+    cursor: pointer;
+
+    /* Center content */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;    /* Center children horizontally */
+    text-align: center;     /* Center text */
+}
+
 #reopenOverlay {
     margin-top: 10px;
     padding: 8px 16px;
@@ -69,27 +90,15 @@ html, body {
     background-color: #0056b3;
 }
 
-#overlayBox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-}
-
 #overlayContent {
-    background: white;
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     max-width: 400px;
     width: 80%;
-    position: relative;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
