@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const counterElement = document.createElement('div');
         counterElement.id = 'counter';
-        counterElement.textContent = `Locations clicked: 0 / ${totalMarkers}`;
+        counterElement.textContent = `Locations Discovered: 0 / ${totalMarkers}`;
         counterContainer.appendChild(counterElement);
 
         document.body.appendChild(counterContainer);
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * Updates the counter display.
      */
     function updateCounter(counterElement, visitedCount, totalMarkers) {
-        counterElement.textContent = `Locations clicked: ${visitedCount} / ${totalMarkers}`;
+        counterElement.textContent = `Locations Discovered: ${visitedCount} / ${totalMarkers}`;
     }
 
     /**

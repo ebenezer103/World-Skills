@@ -164,3 +164,54 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+#accessibilityButton {
+    position: fixed; /* Fixes the button in a specific position */
+    bottom: 20px; /* 20px from the bottom of the viewport */
+    right: 20px; /* 20px from the right of the viewport */
+    z-index: 2000; /* Ensures the button appears above other elements */
+}
+
+#toggleAccessibilityMenu {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#accessibilityMenu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position relative to the button */
+    bottom: 50px; /* Position the menu just above the button */
+    right: 0; /* Align with the right edge of the button */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2000; /* Keeps the menu above other elements */
+}
+
+#accessibilityMenu button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #3e4d99;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#accessibilityMenu button:hover {
+    background-color: #e2e6ea;
+}
+
+#high-contrast {
+    background-color: black;
+    color: yellow;
+}
