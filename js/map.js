@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return [
             { 
                 name: 'EE Retail Shop - Buchanan St.',
-                text: 'This shop implements a closed-door policy which reduces energy waste during heating and air conditioning seasons. Previously, open doors led to significant energy loss, but the new approach has resulted in noticeable energy savings.<br><br>As of mid-year, the shop has achieved a 10% reduction in energy consumption compared to the previous year, demonstrating the impact of this simple yet effective initiative.<br><br><a href="https://www.bt.com/about/digital-impact-and-sustainability/tackling-climate-change" style="font-style: italic;">Reference: BT Impact & Sustainability</a>',
+                text: 'This shop implements a closed-door policy which reduces energy waste during heating and air conditioning seasons. Previously, open doors led to significant energy loss, but the new approach has resulted in noticeable energy savings.<br><br>As of mid-year, the shop has achieved a 10% reduction in energy consumption compared to the previous year, demonstrating the impact of this simple yet effective initiative.<br><br><a href="https://www.bt.com/about/digital-impact-and-sustainability/tackling-climate-change" target="_blank" style="font-style: italic;">Reference: BT Impact & Sustainability</a>',
                 position: { lat: 55.8596643, lng: -4.258941 },
                 icon: 'img/bt-logo.png'
             },
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             { 
                 name: 'JP Morgan - Bournemouth',
-                text: 'This office fully relies on solar panels installed across the roof to meet its energy needs.<br><br>By shifting entirely to renewable energy, it reduces dependency on non-renewable resources and promotes responsible energy production.<br><br><a href="https://www.bournemouthecho.co.uk/news/18477113.jp-morgan-build-canopy-solar-panels-bournemouth-car-park/" style="font-style: italic;">Reference: Bournemouth Echo</a>',
+                text: 'This office fully relies on solar panels installed across the roof to meet its energy needs.<br><br>By shifting entirely to renewable energy, it reduces dependency on non-renewable resources and promotes responsible energy production.<br><br><a href="https://www.bournemouthecho.co.uk/news/18477113.jp-morgan-build-canopy-solar-panels-bournemouth-car-park/" target="_blank" style="font-style: italic;">Reference: Bournemouth Echo</a>',
                 position: { lat: 50.7205, lng: -1.8795 }, 
                 icon: 'img/jpm-logo.jpg'
             },
