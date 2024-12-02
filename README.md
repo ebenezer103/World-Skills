@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ebenezer103/World-Skills">
-    <img src="img/fantastic-five.png" alt="Logo" width="90" height="95.7">
+    <img src="img/fantastic-five.png" alt="Logo" width="100" height="106.33">
   </a>
 
   <h3 align="center">Fantastic Five</h3>
@@ -11,18 +11,20 @@
   <p align="center">
     Welcome to our project!
     <br />
-    <a href="https://github.com/ebenezer103/World-Skills"><strong>Access Our Tool »</strong></a>
+    <br />
+    <a href="https://ebenezer103.github.io/World-Skills/"><strong>Access Our Tool »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ebenezer103/World-Skills/blob/main/SDG%20Rationale.pdf"><strong>SDG Rationale »</strong></a>
+    <a href="competition/SDG%20Rationale.pdf"><strong>SDG Rationale »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ebenezer103/World-Skills/blob/main/Fantastic%20Five_.pptx"><strong>Presentation »</strong></a>
+    <a href="competition/Fantastic%20Five_.pptx"><strong>Presentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ebenezer103/World-Skills/blob/main/Toolkit_%20How%20to%20Use%20The%20Fantastic%20Five%20Website%20(2).pdf"><strong>Toolkit »</strong></a>
+    <a href="competition/Toolkit_%20How%20to%20Use%20The%20Fantastic%20Five%20Website%20(2).pdf"><strong>Toolkit »</strong></a>
     <br />
     <br />
+    _Please note that you may need to download the files so as to view them._
   </p>
 </div>
 
