@@ -3,6 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlayBox = document.getElementById('overlayContent');
     const closeOverlayButton = document.getElementById('closeOverlay');
 
+    const initialOverlayBox = document.getElementById('initialContent');
+    const closeInitialOverlayButton = document.getElementById('closeInitialOverlay');
+
+    if (closeInitialOverlayButton) {
+        closeInitialOverlayButton.addEventListener('click', () => {
+            initialOverlayBox.style.display = 'none';
+        });
+    }
+
     if (closeOverlayButton) {
         closeOverlayButton.addEventListener('click', () => {
             overlayBox.style.display = 'none';
@@ -35,14 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Increase text size
     let fontSize = 16;
     increaseTextSizeButton.addEventListener('click', () => {
-        fontSize += 2; // Increase by 2px
-        document.body.style.fontSize = `${fontSize}px`;
+        // fontSize += 2; // Increase by 2px
+        // document.body.style.fontSize = `${fontSize}px`;
     });
 
     // Decrease text size
     decreaseTextSizeButton.addEventListener('click', () => {
-        fontSize = Math.max(12, fontSize - 2); // Decrease but ensure a minimum size
-        document.body.style.fontSize = `${fontSize}px`;
+        // fontSize = Math.max(12, fontSize - 2); // Decrease but ensure a minimum size
+        // document.body.style.fontSize = `${fontSize}px`;
     });
 
     // Toggle high contrast mode

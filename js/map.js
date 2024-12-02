@@ -102,32 +102,32 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadOfficeData() {
         return [
             { 
-                name: 'EE Retail Shop - Martlesham Heath',
-                text: 'This office has significantly reduced CO2 emissions by transitioning its fleet to electric vehicles. By replacing traditional combustion-engine vehicles, the office is lowering its environmental impact while promoting responsible resource use.<br><br>The switch also sets an example for sustainable transportation practices within the industry.',
-                position: { lat: 55.8574, lng: -4.2558 }, 
+                name: 'EE Retail Shop - Buchanan St.',
+                text: 'This shop implements a closed-door policy which reduces energy waste during heating and air conditioning seasons. Previously, open doors led to significant energy loss, but the new approach has resulted in noticeable energy savings.<br><br>As of mid-year, the shop has achieved a 10% reduction in energy consumption compared to the previous year, demonstrating the impact of this simple yet effective initiative.<br><br><a href="https://www.bt.com/about/digital-impact-and-sustainability/tackling-climate-change" style="font-style: italic;">Reference: BT Impact & Sustainability</a>',
+                position: { lat: 55.8596643, lng: -4.258941 },
                 icon: 'img/bt-logo.png'
             },
             { 
                 name: 'BT Office - Sheffield',
-                text: 'This office implement a closed-door policy which reduce energy waste during heating and air conditioning seasons. Previously, open doors led to significant energy loss, but the new approach has resulted in noticeable energy savings.<br><br>As of mid-year, the office has achieved a 10% reduction in energy consumption compared to the previous year, demonstrating the impact of this simple yet effective initiative.',
+                text: 'This office has significantly reduced CO2 emissions by transitioning its fleet to electric vehicles. By replacing traditional combustion-engine vehicles, the office is lowering its environmental impact while promoting responsible resource use.<br><br>The switch also sets an example for sustainable transportation practices within the industry.<br><br><a href="#" style="font-style: italic;">Reference: BT Intranet</a>',
                 position: { lat: 53.3996, lng: -1.4385 },
                 icon: 'img/bt-logo.png'
             },
             { 
                 name: 'Rokos Capital Management',
-                text: 'This office focuses on minimizing energy usage by using energy-efficient equipment and practices. It operates as a zero waste to landfill site, ensuring all waste is recycled in the UK office.<br><br>The team prioritizes sustainability by using recycled paper and partnering with PrintReleaf to offset paper usage. Additionally, they work with ClimeCo to offset carbon emissions through various initiatives, including reforestation projects.',
+                text: 'This office focuses on minimizing energy usage by using energy-efficient equipment and practices. It operates as a zero waste to landfill site, ensuring all waste is recycled in the UK office.<br><br>The team prioritizes sustainability by using recycled paper and partnering with PrintReleaf to offset paper usage. Additionally, they work with ClimeCo to offset carbon emissions through various initiatives, including reforestation projects.<br><br><a href="#" style="font-style: italic;">Reference: RCM Intranet ESG</a>',
                 position: { lat: 51.5128, lng: -0.1409 }, 
                 icon: 'img/rcm-logo.jpeg'
             },
             { 
                 name: 'JP Morgan - Bournemouth',
-                text: 'This office fully relies on solar panels installed across the roof to meet its energy needs.<br><br>By shifting entirely to renewable energy, it reduces dependency on non-renewable resources and promotes responsible energy production.',
+                text: 'This office fully relies on solar panels installed across the roof to meet its energy needs.<br><br>By shifting entirely to renewable energy, it reduces dependency on non-renewable resources and promotes responsible energy production.<br><br><a href="https://www.bournemouthecho.co.uk/news/18477113.jp-morgan-build-canopy-solar-panels-bournemouth-car-park/" style="font-style: italic;">Reference: Bournemouth Echo</a>',
                 position: { lat: 50.7205, lng: -1.8795 }, 
                 icon: 'img/jpm-logo.jpg'
             },
             { 
                 name: 'JP Morgan - Bank Street, London',
-                text: 'This office implements energy-saving algorithms for resources & hardware around the office.<br><br>These systems reduce unnecessary energy consumption in daily operations, aligning with the goal of efficient resource use.',
+                text: 'This office implements energy-saving algorithms for resources & hardware around the office.<br><br>These systems reduce unnecessary energy consumption in daily operations, aligning with the goal of efficient resource use.<br><br><a href="#" style="font-style: italic;">Reference: JPM Intranet</a>',
                 position: { lat: 51.5056, lng: -0.0176 }, 
                 icon: 'img/jpm-logo.jpg'
             }
