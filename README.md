@@ -1,13 +1,9 @@
-# World-Skills
-
 <a id="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
 
 <br />
 <div align="center">
   <a href="https://github.com/ebenezer103/World-Skills">
-    <img src="img/fantastic-five.png" alt="Logo" width="60" height="63.8">
+    <img src="img/fantastic-five.png" alt="Logo" width="90" height="95.7">
   </a>
 
   <h3 align="center">Fantastic Five</h3>
@@ -18,13 +14,13 @@
     <a href="https://github.com/ebenezer103/World-Skills"><strong>Access Our Tool »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ebenezer103/World-Skills/blob/main/SDG%20Rationale.pdf">SDG Rationale »</strong></a>
+    <a href="https://github.com/ebenezer103/World-Skills/blob/main/SDG%20Rationale.pdf"><strong>SDG Rationale »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ebenezer103/World-Skills/blob/main/Fantastic%20Five_.pptx">Presentation »</strong></a>
+    <a href="https://github.com/ebenezer103/World-Skills/blob/main/Fantastic%20Five_.pptx"><strong>Presentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ebenezer103/World-Skills/blob/main/Toolkit_%20How%20to%20Use%20The%20Fantastic%20Five%20Website%20(2).pdf">Toolkit »</strong></a>
+    <a href="https://github.com/ebenezer103/World-Skills/blob/main/Toolkit_%20How%20to%20Use%20The%20Fantastic%20Five%20Website%20(2).pdf"><strong>Toolkit »</strong></a>
     <br />
     <br />
   </p>
@@ -60,9 +56,8 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Logos
-[contributors-url]: https://github.com/ebenezer103/World-Skills/graphs/contributors
 [product-screenshot]: img/World-Skills-Screenshot.png
+[contributors-shield]: https://github.com/ebenezer103/World-Skills/graphs/contributors
 [html-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
 [js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
