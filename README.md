@@ -24,7 +24,7 @@
     <a href="competition/Toolkit_%20How%20to%20Use%20The%20Fantastic%20Five%20Website%20(2).pdf"><strong>Toolkit »</strong></a>
     <br />
     <br />
-    _Please note that you may need to download the files so as to view them._
+    <em>Please note that you may need to download the files so as to view them.</em>
   </p>
 </div>
 
