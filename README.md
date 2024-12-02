@@ -15,13 +15,13 @@
     <a href="https://ebenezer103.github.io/World-Skills/"><strong>Access Our Tool »</strong></a>
     <br />
     <br />
-    <a href="competition/SDG%20Rationale.pdf"><strong>SDG Rationale »</strong></a>
+    <a href="Competition/SDG%20Rationale.pdf"><strong>SDG Rationale »</strong></a>
     <br />
     <br />
-    <a href="competition/Fantastic%20Five_.pptx"><strong>Presentation »</strong></a>
+    <a href="Competition/Fantastic%20Five_.pptx"><strong>Presentation »</strong></a>
     <br />
     <br />
-    <a href="competition/Toolkit_%20How%20to%20Use%20The%20Fantastic%20Five%20Website%20(2).pdf"><strong>Toolkit »</strong></a>
+    <a href="Competition/Toolkit_%20How%20to%20Use%20The%20Fantastic%20Five%20Website%20(2).pdf"><strong>Toolkit »</strong></a>
     <br />
     <br />
     <em>Please note that you may need to download the files so as to view them.</em>
