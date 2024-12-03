@@ -45,30 +45,29 @@ document.addEventListener('DOMContentLoaded', () => {
      * Handles marker click events, updates the counter, and opens the InfoWindow.
      */
     function handleMarkerClick(office, visitedMarkers, infoWindow, map, marker, counterElement, totalMarkers) {
-        lastMarkerBeforeQuiz = false;
 
         if (!visitedMarkers.has(office.name)) {
             visitedMarkers.add(office.name);
             updateCounter(counterElement, visitedMarkers.size, totalMarkers);
 
+        }
+
+        // Add an event listener for the closeclick event
+        google.maps.event.addListener(infoWindow, 'closeclick', function() {
             if (visitedMarkers.size === totalMarkers) {
-                lastMarkerBeforeQuiz = true;
-                infoWindow.close();
                 showOverlay();
             }
-        }
+        });
 
-        if (!lastMarkerBeforeQuiz) {
 
-            infoWindow.setContent(`
-            <div class="info-window">
-                <h2>${office.name}</h2>
-                <p>${office.text}</p>
-            </div>
-        `);
-            infoWindow.open(map, marker);
+        infoWindow.setContent(`
+        <div class="info-window">
+            <h2>${office.name}</h2>
+            <p>${office.text}</p>
+        </div>
+    `);
+        infoWindow.open(map, marker);
 
-        }
 
 
     }
